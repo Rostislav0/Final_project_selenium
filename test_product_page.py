@@ -19,4 +19,4 @@ def test_guest_can_add_product_to_basket(browser, link):
     page = BasePage(browser, link)
     page.open()
     product_page = ProductPage(browser, page)
-    product_page.all()
+    product_page.add_to_basket_and_check_that_names_and_prices_equal()

@@ -1,5 +1,6 @@
-from selenium.common.exceptions import NoSuchElementException
-from selenium.common.exceptions import NoAlertPresentException
+from selenium.common.exceptions import NoSuchElementException, NoAlertPresentException, TimeoutException
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support.expected_conditions import presence_of_element_located
 from math import log, sin
 
 
