@@ -1,4 +1,4 @@
-from .locators import LoginPageLocators
+from .locators import MainPageLocators
 
 
 class LoginPage():
@@ -15,7 +15,7 @@ class LoginPage():
         assert 'login' in self.current_url, f'"login" is not in url({self.current_url})'
 
     def should_be_login_form(self):
-        assert self.browser.find_element(*LoginPageLocators.LOGIN_FORM), 'Form login not found'
+        assert self.browser.find_element(*MainPageLocators.LOGIN_FORM), 'Form login not found'
 
     def should_be_register_form(self):
-        assert self.browser.find_element(*LoginPageLocators.REGISTER_FORM), 'Form register not found'
+        assert self.browser.find_element(*MainPageLocators.REGISTER_FORM), 'Form register not found'
