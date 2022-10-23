@@ -32,3 +32,11 @@ class ProductPage():
     def correct_name_and_price_on_page_and_basket(self):
         assert self.name_on_page == self.name_in_basket, 'Names on page and in basket are difference'
         assert self.price_on_page == self.price_in_basket, 'Price on page and in basket are difference'
+
+    def should_not_be_success_message(self):
+        assert self.page.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message is presented, but should not be"
+
+    def should_not_be_success_message_disappeared(self):
+        assert self.page.is_dissapeared(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Message is not disappear, but should be"
