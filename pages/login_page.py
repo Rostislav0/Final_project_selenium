@@ -1,6 +1,5 @@
-import time
-
 from .locators import MainPageLocators, LoginPageLocators
+
 
 class LoginPage():
     def __init__(self, browser):
@@ -32,8 +31,3 @@ class LoginPage():
 
         register_button = self.browser.find_element(*LoginPageLocators.REGISTER_BTN)
         register_button.click()
-
-
-
-
-
