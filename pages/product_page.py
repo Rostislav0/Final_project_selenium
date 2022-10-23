@@ -13,7 +13,6 @@ class ProductPage():
     def add_to_basket_and_check_that_names_and_prices_equal(self):
         self.name_and_price_product_on_page()
         self.add_to_basket()
-        self.page.solve_quiz_and_get_code()
         self.name_and_price_product_in_basket()
         self.correct_name_and_price_on_page_and_basket()
 
