@@ -18,7 +18,7 @@ class TestLoginFromMainPage():
         page = MainPage(browser, link)
         page.open()
         page.go_to_login_page()
-        login_page = LoginPage(browser=browser, url=browser.current_url)
+        login_page = LoginPage(browser=browser)
         login_page.should_be_login_page()
 
 
