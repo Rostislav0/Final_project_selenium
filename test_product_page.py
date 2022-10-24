@@ -51,7 +51,7 @@ class TestGuestCanGoToLoginPageFromProductPage():
 
 
 @pytest.mark.need_review
-def test_user_can_add_product_to_basket(browser):
+def test_guest_can_add_product_to_basket(browser):
     link = 'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/'
     page = BasePage(browser, link)
     page.open()
